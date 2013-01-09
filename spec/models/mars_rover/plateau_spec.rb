@@ -23,7 +23,7 @@ describe MarsRover::Plateau do
         rover = MarsRover::Rover.new
         x = 5
         y = 5
-        @plateau.land(x, y, rover)
+        rover.land(@plateau, x, y)
         @plateau.occupied_by?(x, y, rover).should be_true
         @plateau.occupied?(x, y).should be_true
         rover_landed = @plateau.rover(x, y)
@@ -34,7 +34,7 @@ describe MarsRover::Plateau do
         rover = MarsRover::Rover.new
         x = 5
         y = 5
-        @plateau.land(x, y, rover)
+        rover.land(@plateau, x, y)
         @plateau.occupied_by?(x, y, rover).should be_true
         @plateau.occupied?(x, y).should be_true
         rover_landed = @plateau.rover(x, y)
@@ -57,7 +57,7 @@ describe MarsRover::Plateau do
         rover = MarsRover::Rover.new
         x = 3
         y = 2
-        plateau.land(x, y, rover)
+        rover.land(plateau, x, y)
         plateau.occupied?(x, y).should be_true
         x = 3
         y = 1
