@@ -182,13 +182,13 @@ I used [RSpec](https://github.com/rspec/rspec-core) for that. Again in BDD mode,
 ## Running from command line
 
 You need to call `ruby main.rb` and give the input as a multiline string. Example:
-<code>
+<pre>
 ruby main.rb "5 5
 > 1 2 N
 > LMLMLMLMM
 > 3 3 E
 > MMRMMRMRRM"
-<code>
+</pre>
 
 It will print the result.
 
