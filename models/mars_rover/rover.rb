@@ -3,7 +3,7 @@ module MarsRover
     attr_accessor :facing
     attr_reader   :plateau
 
-    def initialize(options)
+    def initialize(options = nil)
       initialize_from_string(options) unless options.nil?
     end
 
