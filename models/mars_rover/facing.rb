@@ -6,6 +6,10 @@ module MarsRover
       @facing = facing
     end
 
+    def to_s
+      facing
+    end
+
     def north?
       @facing == 'N'
     end

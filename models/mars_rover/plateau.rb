@@ -29,6 +29,10 @@ module MarsRover
       occupied?(x, y) && @plateau[x][y].object_id == rover.object_id
     end
 
+    def release(x, y)
+      self.plateau[x][y] = nil
+    end
+
     def out_of_limits?(x, y)
       x < 0 || x > upper_x || y < 0 || y > upper_y
     end
